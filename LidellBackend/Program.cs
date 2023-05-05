@@ -13,6 +13,10 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<FighterDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("LidellConnectionString")));
 
+builder.Services.AddDbContext<ScoreDbContext>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString("LidellConnectionString")));
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

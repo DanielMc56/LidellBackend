@@ -5,7 +5,7 @@ namespace LidellBackend.Data
 {
     public class FighterDbContext : DbContext
     {
-        public FighterDbContext(DbContextOptions options) : base(options)
+        public FighterDbContext(DbContextOptions<FighterDbContext> options) : base(options)
         {
         }
 

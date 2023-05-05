@@ -19,6 +19,8 @@
 
         public string Record { get; set; }
 
+        public string Photo { get; set; }
+
         public string Ranking { get; set; }
     }
 }
